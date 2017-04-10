@@ -1,0 +1,23 @@
+{
+  "name": "angular-facebook-sdk",
+  "version": "1.0.0",
+  "description": "This is an angular module for connecting to the facebook sdk.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dylanlawrence/angular-facebook-sdk.git"
+  },
+  "keywords": [
+    "angular",
+    "fbsdk"
+  ],
+  "author": "Dylan Lawrence",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dylanlawrence/angular-facebook-sdk/issues"
+  },
+  "homepage": "https://github.com/dylanlawrence/angular-facebook-sdk#readme"
+}
