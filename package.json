@@ -2,8 +2,11 @@
   "name": "angular-facebook-sdk",
   "version": "1.0.0",
   "description": "This is an angular module for connecting to the facebook sdk.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
+    "prebuild": "rimraf ./dist ./compiled && mkdir dist",
+    "build": "ngc -p ./tsconfig.json && tsc -p ./tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +22,20 @@
   "bugs": {
     "url": "https://github.com/dylanlawrence/angular-facebook-sdk/issues"
   },
-  "homepage": "https://github.com/dylanlawrence/angular-facebook-sdk#readme"
+  "homepage": "https://github.com/dylanlawrence/angular-facebook-sdk#readme",
+  "devDependencies": {
+    "@angular/common": "^4.0.1",
+    "@angular/compiler": "^4.0.1",
+    "@angular/compiler-cli": "^4.0.1",
+    "@angular/core": "^4.0.1",
+    "@angular/platform-browser": "^4.0.1",
+    "@angular/platform-browser-dynamic": "^4.0.1",
+    "@types/fb": "0.0.22",
+    "@types/node": "^7.0.12",
+    "angular": "^1.6.4",
+    "rimraf": "^2.6.1",
+    "rxjs": "^5.3.0",
+    "typescript": "^2.2.2",
+    "zone.js": "^0.8.5"
+  }
 }
